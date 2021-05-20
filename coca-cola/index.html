@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="sec">
+    <header class="after">
+      <div class="logo zoom"></div>
+        <ul class="navigation">
+          <li><a href="#" class="zoom">Home</a></li>
+          <li><a href="#about-us" class="zoom">About Us</a></li>
+          <li><a href="#products" class="zoom">Products</a></li>
+          <li><a href="#events" class="zoom">Events</a></li>
+          <li><a href="#contact" class="zoom">Contact Us</a></li>
+        </ul>
+        <div class="hamburger" onclick="menuToogle()">
+           <span></span>
+           <span></span>
+           <span></span>
+         </div>
+      </header>
+      <div class="hero after reveal">
+        <div class="hero__content">
+         <h1 class="big-text u">Coca-Cola's World</h1>
+         <p class="normal-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+         <video autoplay muted loop id="back">
+           <source src="back-video.mp4" type="video/mp4">
+         </video>
+         <ul class="sci">
+          <li><a href="#"><img class="zoom" src="facebook.png" alt=""></a></li>
+          <li><a href="#"><img class="zoom" src="twitter.png" alt=""></a></li>
+          <li><a href="#"><img class="zoom" src="instagram.png" alt=""></a></li>
+         </ul>
+      </div>
+      <div class="products slide-r">
+        <a name="products"></a>
+        <div class="contentBox slide-l">
+          <div class="textBox">
+            <h1 class="big-text u">Products</h1>
+            <h2 class="med-text u">That's what you <span class="u r">LOVE</span></h2>
+          </div>
+          <div class="imgBox after"></div>
+        </div>
+        <div class="sliderBox">
+          <div class="mySlides after"></div>
+          <div class="mySlides after"></div>
+          <div class="mySlides after"></div>
+          <div class="mySlides after"></div>
+          <div class="mySlides after"></div>
+
+          <button class="w3-button w3-black w3 display-left" onclick="plusDivs(-1)"><</button>
+          <button class="w3-button w3-black w3 display-right" onclick="plusDivs(1)">></button>
+        </div>
+      </div>
+      <div class="about-us slide-l mt1">
+        <div class="contentBox">
+          <a name="about-us"></a>
+          <div class="textBox slide-r">
+            <h1 class="big-text u b zoom">what about <span class="w">coca-cola ?</span></h1>
+            <p class="small-text w zoom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="imgCir"></div>
+        </div>
+      </div>
+      <div class="events slide-r mt p1">
+        <a name="events"></a>
+        <div class="sliderBox p0 slde-l">
+          <div class="myEvents after">
+            <div class="textBox wth ">
+              <h1 class="normal-text u r">Lorem</h1>
+              <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="myEvents after">
+            <div class="textBox wth ">
+              <h1 class="normal-text u r">Lorem</h1>
+              <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="myEvents after">
+            <div class="textBox wth ">
+              <h1 class="normal-text u r">Lorem</h1>
+              <p class="small-text">Coca cola con la cannuccia corta</p>
+            </div>
+          </div>
+          <div class="myEvents after">
+            <div class="textBox wth ">
+              <h1 class="normal-text u r">Lorem</h1>
+              <p class="small-text">Ricicla la carta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer mt1 reveal">
+        <a name="contact"></a>
+        <div class="contentBox">
+          <div class="textBox">
+            <h4 class="normal-text">The Coca-Cola Company</h4>
+            <ul>
+              <li><a href="#" class="small-text">Coca cola con la cannuccia corta</a></li>
+              <li><a href="#" class="small-text">Coca cola con la cannuccia corta</a></li>
+              <li><a href="#" class="small-text">Coca cola con la cannuccia corta</a></li>
+              <li><a href="#" class="small-text">Coca cola con la cannuccia corta</a></li>
+              <li><a href="#" class="small-text">Coca cola con la cannuccia corta</a></li>
+            </ul>
+          </div>
+          <div class="imgFoot"></div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright__text">
+            <p class="small-text">Copyright: Lorenzo Barberi Osagie</p>
+            <p class="small-text">Hope you like it</p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("myEvents");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "flex";
+      setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+    ScrollReveal().reveal('.reveal',{ distance: '100px',duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)',  interval: 600  });
+
+    ScrollReveal().reveal('.zoom',{ duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)',  interval: 200,  scale: 0.65 , mobile:false});
+
+    ScrollReveal().reveal('.slide-r',{ origin:'right',distance: '100px',duration: 3500, easing: 'cubic-bezier(.215, .61, .355, 1)',  interval: 600  });
+
+    ScrollReveal().reveal('.slide-l',{ origin:'left',distance: '100px',duration: 3500, easing: 'cubic-bezier(.215, .61, .355, 1)',  interval: 600  });
+
+    function menuToogle(){
+    const toggleMenu = document.querySelector('.hamburger');
+    const navigation = document.querySelector('.navigation');
+    const logo = document.querySelector('.logo');
+    toggleMenu.classList.toggle('active');
+    navigation.classList.toggle('active');
+    logo.classList.toggle('active');
+
+    };
+    function bgColor(color, color1){
+    const sec = document.querySelector('section');
+    const body = document.querySelector('body');
+    sec.style.color = color;
+    body.style.color = color;
+    };
+
+  </script>
+</body>
+</html>
