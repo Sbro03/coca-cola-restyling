@@ -1,3 +1,6 @@
+#shadow-host-companion{
+  display:none;
+}
 *{
   font-family: 'Poppins',sans-serif;
   padding: 0;
@@ -68,7 +71,7 @@ header{
   width: 100px;
   height: 50px;
   z-index: 11;
-  background: url('logo1.png') center center no-repeat;
+  background: url('./assets/img/png/logo1.png') center center no-repeat;
   background-size: contain;
 }
 
@@ -122,10 +125,10 @@ header a:hover{
 .hero__content h1:hover{transform: scale(1.05);}
 .hero__content p{color:#fff;width: 500px;}
 .sci{
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 30px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +200,7 @@ header a:hover{
   padding-right: 50px;
   margin-top: 50px;
   justify-content: flex-end;
-  background: url('coca.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/coca.jpg') center center no-repeat;
   background-size: contain;
 }
 .sliderBox{
@@ -212,23 +215,23 @@ header a:hover{
 }
 .mySlides{width: 100%;height: 100%;}
 .mySlides:nth-child(1){
-  background: url('1.jpg') center center no-repeat ;
+  background: url('./assets/img/jpg/1.jpg') center center no-repeat ;
   background-size: cover ;
 }
 .mySlides:nth-child(2){
-  background: url('2.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/2.jpg') center center no-repeat;
   background-size: cover ;
 }
 .mySlides:nth-child(3){
-  background: url('3.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/3.jpg') center center no-repeat;
   background-size: cover ;
 }
 .mySlides:nth-child(4){
-  background: url('4.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/4.jpg') center center no-repeat;
   background-size: cover ;
 }
 .mySlides:nth-child(5){
-  background: url('5.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/5.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -272,7 +275,7 @@ header a:hover{
   border-radius: 50%;
   border: 10px solid #000;
   overflow: hidden;
-  background: url('6.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/6.jpg') center center no-repeat;
   background-size: cover;
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
@@ -295,19 +298,19 @@ header a:hover{
   padding-left: 50px;
 }
 .myEvents:nth-child(1){
-  background: url('2.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/2.jpg') center center no-repeat;
   background-size: cover;
 }
 .myEvents:nth-child(2){
-  background: url('3.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/3.jpg') center center no-repeat;
   background-size: cover;
 }
 .myEvents:nth-child(3){
-  background: url('4.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/4.jpg') center center no-repeat;
   background-size: cover;
 }
 .myEvents:nth-child(4){
-  background: url('5.jpg') center center no-repeat;
+  background: url('./assets/img/jpg/5.jpg') center center no-repeat;
   background-size: cover;
 }
 .footer{
@@ -340,7 +343,7 @@ header a:hover{
   justify-content: center;
   width: 200px;
   height: 100px;
-  background: url('logo.png') center center no-repeat;
+  background: url('./assets/img/png/logo.png') center center no-repeat;
   background-size: cover;
 }
 .footer__copyright{
@@ -367,6 +370,7 @@ header a:hover{
 
 @media (max-width:991px) {
   .big-text{font-size: 30px;}
+  .hero .big-text{font-size: 24px;text-align: center;}
   .med-text{font-size: 25px;}
   .normal-text{font-size: 15px;}
   section{
@@ -463,8 +467,13 @@ header a:hover{
     top:9px;
     transform:rotate(-45deg);
   }
+  .hero{
+    padding: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .hero__content{padding: 0;}
-  .hero__content p{width: 100%;}
+  .hero__content p{width: 100%; text-align: center;}
   .sci{
     position: relative;
     width: 100%;
